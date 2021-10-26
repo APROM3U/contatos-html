@@ -1,0 +1,15 @@
+@host=http://contatos-nodb.herokuapp.com
+
+###
+POST {{host}}/registrar HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Alexandre_Teste",
+    "email": "alexandre@teste.com",
+    "senha": "alexandre"
+}
+
+###
+GET {{host}}/contatos HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwibm9tZSI6IkFsZXhhbmRyZSIsImVtYWlsIjoiYWxleGFuZHJlQGVtYWlsLmNvbSIsImlhdCI6MTYzNTIwNjE0Mn0.8QFSIWbNImZjm_gAl_Hl1m5R8uJO4tYBRAKwuS7KGks
